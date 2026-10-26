@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ManualMove - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "V:\Users\SHSHT~1.ESH\AppData\Local\Temp\RSPD75D.tmp" with contents
+[
+Debug/usbc.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ManualMove.pdb" /debug /machine:I386 /out:"Debug/ManualMove.exe" /pdbtype:sept 
+.\Debug\CallBack.obj
+.\Debug\ManualMove.obj
+.\Debug\ManualMoveDlg.obj
+.\Debug\MyButton.obj
+.\Debug\StdAfx.obj
+.\Debug\ManualMove.res
+]
+Creating command line "link.exe @V:\Users\SHSHT~1.ESH\AppData\Local\Temp\RSPD75D.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4076: invalid incremental status file "Debug/ManualMove.ilk"; linking nonincrementally
+ManualMove.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+ManualMove.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+ManualMove.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+ManualMoveDlg.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+ManualMoveDlg.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+ManualMoveDlg.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+MyButton.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+MyButton.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+MyButton.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+StdAfx.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+StdAfx.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+StdAfx.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+msvcrtd.lib(cinitexe.obj) : warning LNK4078: multiple ".CRT" sections found with different attributes (C0300040)
+LINK : fatal error LNK1104: cannot open file "mfc90d.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+ManualMove.exe - 1 error(s), 14 warning(s)
+</pre>
+</body>
+</html>

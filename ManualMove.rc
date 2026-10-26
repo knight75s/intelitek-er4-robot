@@ -1,0 +1,267 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ManualMove.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ManualMove.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ManualMove"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ManualMove Version 1.03",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MANUALMOVE_DIALOG DIALOGEX 0, 0, 228, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Manual Movement"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Axis",IDC_STATIC,4,70,220,100
+    CONTROL         "1 - &Base",IDC_RADIO_AXIS_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,79,52,10
+    CONTROL         "2 - &Shoulder",IDC_RADIO_AXIS_2,"Button",
+                    BS_AUTORADIOBUTTON,13,95,52,10
+    CONTROL         "3 - &Elbow",IDC_RADIO_AXIS_3,"Button",
+                    BS_AUTORADIOBUTTON,69,79,52,10
+    CONTROL         "4 - &Pitch",IDC_RADIO_AXIS_4,"Button",
+                    BS_AUTORADIOBUTTON,69,95,52,10
+    CONTROL         "5 - Ro&ll",IDC_RADIO_AXIS_5,"Button",BS_AUTORADIOBUTTON,
+                    125,79,52,10
+    CONTROL         "6 - &Gripper",IDC_RADIO_AXIS_6,"Button",
+                    BS_AUTORADIOBUTTON,125,95,52,10
+    PUSHBUTTON      "&Plus",IDC_BUTTON_PLUS,53,114,58,14
+    PUSHBUTTON      "&Minus",IDC_BUTTON_MINUS,119,114,58,14
+    PUSHBUTTON      "&Open Gripper",IDC_BUTTON_OPEN_GROPPER,51,148,60,14
+    PUSHBUTTON      "&Close Gripper",IDC_BUTTON_CLOSE_GROPPER,117,148,60,14
+    PUSHBUTTON      "&On-Line",IDM_INIT,19,14,54,16
+    PUSHBUTTON      "Control O&n",IDM_CON,96,16,54,16
+    PUSHBUTTON      "Control O&ff",IDM_COFF,154,16,54,16
+    LTEXT           "Speed:",IDC_STATIC,187,79,26,10
+    COMBOBOX        IDC_COMBO_SPEED,187,92,26,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Controller",IDC_STATIC,4,2,220,67
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,138,211,1
+    EDITTEXT        IDC_EDIT_MODE,19,50,54,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_CON_OFF,95,50,112,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "&Simulation",IDM_INIT2,19,33,54,16
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,3,0
+ PRODUCTVERSION 1,0,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Intelitek.\0"
+            VALUE "FileDescription", "ManualMove MFC Application\0"
+            VALUE "FileVersion", "1, 0, 3, 0\0"
+            VALUE "InternalName", "ManualMove\0"
+            VALUE "LegalCopyright", "Copyright (C) Intelitek.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ManualMove.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ManualMove Application\0"
+            VALUE "ProductVersion", "1, 0, 3, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MANUALMOVE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MANUALMOVE_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_SPEED, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_SPEED, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_SPEED, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_SPEED, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_SPEED, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_SPEED, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_SPEED, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_SPEED, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_SPEED, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_SPEED, 0x403, 3, 0
+0x3031, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ManualMove..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ManualMove.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

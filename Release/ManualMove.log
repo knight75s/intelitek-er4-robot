@@ -1,0 +1,2 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1133,5): warning MSB4211: "GetTargetPathDependsOn" 속성에 처음으로 값이 설정되고 있지만 이미 "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2243,5)"에서 사용되었습니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(504,5): error MSB8041: 이 프로젝트에는 MFC 라이브러리가 필요합니다. 사용되는 모든 도구 세트 및 아키텍처의 경우 Visual Studio 설치 관리자(개별 구성 요소 탭)에서 설치하세요.
